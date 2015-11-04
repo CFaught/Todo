@@ -57,7 +57,7 @@ angular.module('todo', ['ionic'])
   $scope.activeProject = $scope.projects[Projects.getLastActiveIndex()];
 
   // Called to create a new project
-  $scope.newProject = function() {
+  $scope.newProjects = function() {
     var projectTitle = prompt('Project name');
     if(projectTitle) {
       createProject(projectTitle);
